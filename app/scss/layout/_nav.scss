@@ -1,0 +1,58 @@
+.nav{
+    max-width: 64px;
+    width: 100%;
+    background: $gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-body{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow: auto;
+    padding-top: 35px;
+    .icon{
+        font-size: 24px;
+    }
+}
+.nav-item{
+    margin-bottom: 33px;
+    display: block; 
+    position: relative;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.nav-link{
+    display: block;
+    padding: 0 22px;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 2px;
+        top: -10px;
+        height: 48px;
+        width: 2px;
+        background: $active;
+        border-radius: 0px 2px 2px 0px;
+        opacity: 0;
+        transition: ease-in-out 0.3s;
+        [dir=rtl] &{
+            left: inherit;
+            right: 2px;
+        }
+    }
+    &:hover{
+        &::before{
+        opacity: 1;
+        }
+    }
+}
+.nav-footer{
+    display: block;
+    margin-bottom: 26px;
+    .icon{
+        font-size: 24px;
+    }
+}

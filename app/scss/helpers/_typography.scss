@@ -1,0 +1,105 @@
+.h3{
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: initial;
+    margin-right: 16px;
+    [dir=rtl] &{
+        margin-right: inherit;
+        margin-left: 16px;
+        &.text-light-gray{
+            margin-left: inherit;
+            margin-right: 8px;
+    }
+    }
+}    
+.h4{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.text-accent{
+    color: $text-green;
+    padding-left: 18px;
+    position: relative;
+    [dir=rtl] &{
+        padding-left: inherit;
+        padding-right: 18px;
+    }
+}
+.lock{
+    &::before{
+        position: absolute;
+        content: '';
+        background: url(../images/lock.svg) no-repeat;
+        width: 12px;
+        height: 14px;
+        top: 3px;
+        left: 0;
+        [dir=rtl] &{
+            left: inherit;
+            right: 0;
+        }
+    }
+}
+.text-titile{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.text-date{
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    color: $text-date;
+    font-size: 13px;
+    line-height: 15px;
+    [dir=rtl] &{
+        right: inherit;
+        left: 15px;
+    }
+}
+.is-online{
+    font-size: 15px;
+    line-height: 24px;
+    color: #71747A;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.text-sm{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.text-semi-bold{
+    font-weight: 600;
+}
+.text-xs{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.text-gray{
+    color: $text-gray;
+}
+.text-active{
+    color: $active;
+}
+.text-light-gray{
+    color: $light-gray;
+    margin-left: 8px;
+    [dir=rtl] &{
+        margin-left: inherit;
+        margin-right: 8px;
+    }
+}

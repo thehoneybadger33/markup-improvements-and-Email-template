@@ -1,0 +1,158 @@
+.link{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+    padding: 12px 16px 12px 56px;
+    display: block;
+    border-radius: 8px;
+    max-width: 240px;
+    width: 100%;
+    position: relative;
+    &:hover{
+        background-color: $gray;
+    }
+    [dir=rtl] &{
+        padding: 12px 56px 12px 16px;
+        text-align: end;
+    }
+}
+.link-content{
+    max-width: 260px;
+    width: 100%;
+}
+.link-mute{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 10px; 
+        background: url(../images/bell-cross.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-add-contact{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 10px; 
+        background: url(../images/user-plus.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-copy{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 10px; 
+        background: url(../images/copy-link.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-spam{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/flag.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-tag{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/tag.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-map-point{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/map-point.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-date{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/date.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-mail{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/mail.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}
+.link-twitter{
+    &::before{
+        position: absolute;
+        content: '';
+        left: 16px;
+        top: 11px; 
+        background: url(../images/twitter.svg) no-repeat;
+        width: 24px;
+        height: 24px;
+        [dir=rtl] &{
+            left: inherit;
+            right: 16px;
+        }
+    }
+}

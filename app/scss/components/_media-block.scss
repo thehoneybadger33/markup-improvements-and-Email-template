@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -16px;
+    margin-left: -16px;
+}
+.col{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.media-block{
+    object-fit: contain;
+    width: 114px;
+    width: 100%;
+    border-radius: 8px;
+}

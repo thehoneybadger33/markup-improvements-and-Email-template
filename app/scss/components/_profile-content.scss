@@ -1,0 +1,24 @@
+.profile-content{
+    max-width: 448px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.form-content{ 
+    margin-bottom: 20px;
+}
+.media-content{
+    max-width: 96px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -112px;
+}
+.profile-container{
+    max-width: 448px;
+    width: 100%;
+    margin: 0 auto;
+}
